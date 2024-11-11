@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Operazioni in JavaScript</title>
+	</head>
+
+	<body>
+		<h1>Operazioni in JavaScript</h1>
+
+		<h2>Risultati:</h2>
+		<p>Somma: <span id="somma"></span></p>
+		<p>Sottrazione: <span id="sottrazione"></span></p>
+		<p>Moltiplicazione: <span id="moltiplicazione"></span></p>
+		<p>Divisione: <span id="divisione"></span></p>
+		<p>Modulo: <span id="modulo"></span></p>
+		<p>Incremento di 'a': <span id="incremento"></span></p>
+		<p>Decremento di 'b': <span id="decremento"></span></p>
+		<p>Operazione complessa: <span id="operazioneComplessa"></span></p>
+		<p>Potenza: <span id="potenza"></span></p>
+		<p>Radice quadrata: <span id="radice"></span></p>
+
+		<script>
+			// Dichiarazione delle variabili
+			let a = 5;
+			let b = 3;
+
+			// Somma
+			let somma = a + b;
+			let sommaId = document.getElementById("somma");
+			sommaId.textContent = somma;
+
+			// Sottrazione
+			let sottrazione = a - b;
+			let sottrazioneId = document.getElementById("sottrazione");
+			sottrazioneId.textContent = sottrazione;
+
+			// Moltiplicazione
+			let moltiplicazione = a * b;
+			let moltiplicazioneId = document.getElementById("moltiplicazione");
+			moltiplicazioneId.textContent = moltiplicazione;
+
+			// Divisione
+			let divisione = a / b;
+			let divisioneId = document.getElementById("divisione");
+			divisioneId.textContent = divisione;
+
+			// Modulo
+			let modulo = a % b;
+			let moduloId = document.getElementById("modulo");
+			moduloId.textContent = modulo;
+
+			// Incremento e Decremento
+			a++;
+			let incrementoId = document.getElementById("incremento");
+			incrementoId.textContent = a;
+			b--;
+			let decrementoId = document.getElementById("decremento");
+			decrementoId.textContent = b;
+
+			// Operazione Complessa
+			let operazioneComplessa = (a+b) * (a-b);
+			let operazioneComplessaId = document.getElementById("operazioneComplessa");
+			operazioneComplessaId.textContent = operazioneComplessa;
+
+			// Potenza
+			let base = 2;
+			let esponente = 3;
+			let potenza = base ** esponente;
+			let potenzaId = document.getElementById("potenza");
+			potenzaId.textContent = potenza;
+
+			// Radice Quadrata
+			let numero = 9;
+			let radice = Math.sqrt(numero);
+			let radiceId = document.getElementById("radice");
+			radiceId.textContent = radice;
+		</script>
+	</body>
+
+</html>
